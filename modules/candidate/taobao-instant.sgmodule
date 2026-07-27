@@ -1,0 +1,10 @@
+#!name=淘宝闪购去广告（Candidate）
+#!desc=只拦截首页弹窗模板；不拦截 AMDC、IP 段、订单、登录或支付接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[URL Rewrite]
+^https:\/\/nr-op\.elemecdn\.com\/eleme\/transformer\/templates\/\w+_eleme_home_yolo_popup(?:\?|$) - reject
+
+[MITM]
+hostname = %APPEND% nr-op.elemecdn.com

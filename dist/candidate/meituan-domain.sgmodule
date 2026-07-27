@@ -1,0 +1,8 @@
+#!name=美团去广告（仅域名，Candidate）
+#!desc=只拒绝美团和外卖专用广告域；不拦截 HTTPDNS、更新、状态或图片 CDN。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,ad.e.waimai.sankuai.com,REJECT
+DOMAIN,mads.meituan.com,REJECT

@@ -1,0 +1,14 @@
+#!name=米家去广告（Candidate）
+#!desc=只处理广告配置、推荐和开屏接口；不进入设备控制、配网、家庭或账户接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
+
+[Map Local]
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d+\/recommendation\/(?:banner|carousel\/banners|myTab|openingBanner)(?:\?|$) data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d+\/resource\/realtime\/openingBanner(?:\?|$) data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+[MITM]
+hostname = %APPEND% home.mi.com

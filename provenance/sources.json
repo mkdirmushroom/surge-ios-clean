@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-07-27",
+  "sources": [
+    {
+      "repository": "privacy-protection-tools/anti-AD",
+      "ref": "master",
+      "expectedCommit": "2238f4c54c4b2db58497b7317be0a75f59f8c80f",
+      "license": "MIT",
+      "policy": "domain-candidate-only"
+    },
+    {
+      "repository": "zirawell/R-Store",
+      "ref": "main",
+      "expectedCommit": "fdc1142ce62bb02caa12871efbceb88218396b23",
+      "license": "GPL-3.0",
+      "policy": "endpoint-index-only"
+    },
+    {
+      "repository": "fmz200/wool_scripts",
+      "ref": "main",
+      "expectedCommit": "edbfac44522ef7f05718122ba95919bf2a1bdecc",
+      "license": "GPL-3.0",
+      "policy": "endpoint-index-only"
+    },
+    {
+      "repository": "app2smile/rules",
+      "ref": "master",
+      "expectedCommit": "df6366a7024e0b3f0aa3510c5b791eea6f3cba89",
+      "license": "MIT",
+      "policy": "rewrite-donor-after-log-removal"
+    },
+    {
+      "repository": "kokoryh/Sparkle",
+      "ref": "master",
+      "expectedCommit": "a26c3412a760fb8d7d4d1bcc124d126e19d630e5",
+      "license": "GPL-3.0",
+      "policy": "bilibili-source-candidate"
+    },
+    {
+      "repository": "blackmatrix7/ios_rule_script",
+      "ref": "master",
+      "expectedCommit": null,
+      "license": "GPL-2.0",
+      "policy": "discovery-only"
+    },
+    {
+      "repository": "ishowshu/qx",
+      "ref": "main",
+      "expectedCommit": "035dcb864ab589e39b98ed7d3c53667592a94332",
+      "license": "NO-LICENSE-FOUND",
+      "policy": "behavior-reference-only"
+    },
+    {
+      "repository": "zmqcherish/proxy-script",
+      "ref": "main",
+      "expectedCommit": "1d9f51bc9a0077d81998bb503ee6158ca83faa73",
+      "license": "NO-LICENSE-FOUND",
+      "policy": "historical-reference-only"
+    }
+  ]
+}

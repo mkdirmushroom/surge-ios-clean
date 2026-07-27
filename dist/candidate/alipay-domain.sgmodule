@@ -1,0 +1,7 @@
+#!name=支付宝去广告（仅域名，Candidate）
+#!desc=只拒绝专用广告网关；不启用 MITM，不拦截配置、遥测、登录或支付接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,adgw.alipay.com,REJECT

@@ -1,0 +1,16 @@
+#!name=虎扑去广告（Candidate）
+#!desc=拒绝专用广告域和明确广告接口；不使用图片尺寸或 CDN 路径猜测。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,adx.hupu.com,REJECT
+DOMAIN,adx-api.hupu.com,REJECT
+DOMAIN,goblin.hupu.com,REJECT
+
+[URL Rewrite]
+^https:\/\/goblin\.hupu\.com\/[^?\s]+\/interfaceAd\/ - reject
+^https:\/\/games\.mobileapi\.hupu\.com\/[^?\s]*\/interfaceAd(?:\/|$) - reject
+
+[MITM]
+hostname = %APPEND% goblin.hupu.com, games.mobileapi.hupu.com

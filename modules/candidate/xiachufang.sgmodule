@@ -1,0 +1,14 @@
+#!name=下厨房去广告（Candidate）
+#!desc=只拒绝专用广告域和版本化广告接口；不使用图片目录或日期猜测。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,baidu-union-js.xiachufang.com,REJECT
+DOMAIN,baidu-union-pos.xiachufang.com,REJECT
+
+[URL Rewrite]
+^https:\/\/api\.xiachufang\.com\/v\d+\/ad(?:\/|\?|$) - reject
+
+[MITM]
+hostname = %APPEND% api.xiachufang.com
