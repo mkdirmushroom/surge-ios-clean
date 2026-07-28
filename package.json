@@ -1,0 +1,16 @@
+{
+  "name": "surge-ios-clean",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "audit": "node tools/audit.mjs",
+    "check:surge": "node tools/check-surge.mjs",
+    "check:upstreams": "node tools/check-upstreams.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

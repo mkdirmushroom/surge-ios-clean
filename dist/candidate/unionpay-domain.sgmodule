@@ -1,0 +1,8 @@
+#!name=云闪付去广告（仅域名，Candidate）
+#!desc=只拒绝专用广告域名；不启用 MITM，不拦截钱包、开关配置、登录或支付接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,ads.95516.com,REJECT
+DOMAIN,ads.cup.com.cn,REJECT

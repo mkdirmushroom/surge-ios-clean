@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "channel": "candidate",
+  "compatibility": {
+    "surgeIOS": "5.20.0",
+    "iOS": "26.5.2"
+  },
+  "modules": [
+    {
+      "name": "alipay-domain.sgmodule",
+      "sha256": "919cd75ee49552975a567a22e217048f197ce0a272c7502d9851217a6aceb8c0"
+    },
+    {
+      "name": "china-telecom.sgmodule",
+      "sha256": "026df5d2f39d564d72195449eb50043a9d4c606a6bb1385863c93518f8e343bc"
+    },
+    {
+      "name": "damai.sgmodule",
+      "sha256": "3922395a2b5a965087eda143f1395d1fc1320df2ab0a45415c8899eefeefd5ee"
+    },
+    {
+      "name": "hupu.sgmodule",
+      "sha256": "2de5b2afb88f94e57ac84543f2e5c97635aa83cb40a3c20a6bd617f4a87d36be"
+    },
+    {
+      "name": "meituan-domain.sgmodule",
+      "sha256": "c136df12481aa47a5adcfe7c03295a8784c49abdcd32f10ec6bee9933463c356"
+    },
+    {
+      "name": "mihome.sgmodule",
+      "sha256": "26149942f3e7faa15d6c81386daf5ca13292608a0386160834238d4b46394c0f"
+    },
+    {
+      "name": "taobao-instant.sgmodule",
+      "sha256": "1ad4c91931d09d98d477d727d46a9794c58f3b3928f73c5278452a5f78dcd609"
+    },
+    {
+      "name": "unionpay-domain.sgmodule",
+      "sha256": "1881a0fd88c0ce88a504ce95c6f0c3df1d4a50db5d9ae88f4dd14af4c48580b4"
+    },
+    {
+      "name": "xiachufang.sgmodule",
+      "sha256": "c2f9cd22c049d1119dcb46f84deadc230148546771f5b0e5e187e940ea2d59fb"
+    }
+  ]
+}

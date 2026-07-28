@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "compatibility": {
+    "surgeIOS": "5.20.0",
+    "iOS": "26.5.2"
+  },
+  "modules": []
+}

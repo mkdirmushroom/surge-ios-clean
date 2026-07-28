@@ -1,0 +1,43 @@
+name: Upstream watch
+
+on:
+  schedule:
+    - cron: "18 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - id: watch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/check-upstreams.mjs --output reports/upstream-status.json
+      - name: Create one draft review PR
+        if: steps.watch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(gh pr list --state open --search 'Automated upstream change report in:title' --json number --jq 'length')" != "0" ]; then
+            echo "An upstream review PR is already open."
+            exit 0
+          fi
+          branch="automation/upstream-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add reports/upstream-status.json
+          git commit -m "Track upstream changes"
+          git push origin "$branch"
+          gh pr create \
+            --draft \
+            --title "Automated upstream change report" \
+            --body "Upstream commits changed. This PR only records the new SHAs. It does not publish scripts, MITM rules, or stable modules."

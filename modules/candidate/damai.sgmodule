@@ -1,0 +1,13 @@
+#!name=大麦去广告（Candidate）
+#!desc=只处理 popup 和 welcome 广告接口；不进入 AMDC、购票、订单、实名或支付接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[URL Rewrite]
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.mec\.popup(?:\/|\?|$) - reject
+
+[Map Local]
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome(?:\/|\?|$) data-type=text data="{}" status-code=200 header="Content-Type: application/json"
+
+[MITM]
+hostname = %APPEND% acs.m.taobao.com

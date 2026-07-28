@@ -1,0 +1,19 @@
+#!name=中国电信去广告（Candidate）
+#!desc=只处理专用广告域和明确开屏接口；不屏蔽更新、登录或业务接口。Surge iOS 5.20.0 / iOS 26.5.2 candidate。
+#!system=ios
+#!date=2026-07-27
+
+[Rule]
+DOMAIN,ad.21cn.com,REJECT
+DOMAIN,ad.k.21cn.com,REJECT
+DOMAIN,admarket.21cn.com,REJECT
+DOMAIN,adshows.21cn.com,REJECT
+
+[URL Rewrite]
+^https:\/\/cloud\.189\.cn\/include\/splash\/ - reject
+
+[Map Local]
+^https:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/[^?\s]*Animation(?:\?|$) data-type=tiny-gif status-code=200
+
+[MITM]
+hostname = %APPEND% cloud.189.cn, zt-app.go189.cn
