@@ -1,0 +1,4 @@
+{
+  "name": "surge-ios-clean",
+  "install": "node --version && npm run build"
+}
