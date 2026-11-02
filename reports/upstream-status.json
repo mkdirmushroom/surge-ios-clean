@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T11:24:51.688Z",
+  "changed": true,
+  "failed": false,
+  "results": [
+    {
+      "repository": "privacy-protection-tools/anti-AD",
+      "ref": "master",
+      "expectedCommit": "2238f4c54c4b2db58497b7317be0a75f59f8c80f",
+      "currentCommit": "9bbc98fae9be597e9e853c14e2da1a6983d88523",
+      "changed": true
+    },
+    {
+      "repository": "zirawell/R-Store",
+      "ref": "main",
+      "expectedCommit": "fdc1142ce62bb02caa12871efbceb88218396b23",
+      "currentCommit": "918371ab568ab7b4e8be73364f12ffaf8e8e7c24",
+      "changed": true
+    },
+    {
+      "repository": "fmz200/wool_scripts",
+      "ref": "main",
+      "expectedCommit": "edbfac44522ef7f05718122ba95919bf2a1bdecc",
+      "currentCommit": "4b7830670baf235ed945085cb926dc499cf619e0",
+      "changed": true
+    },
+    {
+      "repository": "app2smile/rules",
+      "ref": "master",
+      "expectedCommit": "df6366a7024e0b3f0aa3510c5b791eea6f3cba89",
+      "currentCommit": "df6366a7024e0b3f0aa3510c5b791eea6f3cba89",
+      "changed": false
+    },
+    {
+      "repository": "kokoryh/Sparkle",
+      "ref": "master",
+      "expectedCommit": "a26c3412a760fb8d7d4d1bcc124d126e19d630e5",
+      "currentCommit": "caf42c487706787431109cc105e93fcec8fc61cd",
+      "changed": true
+    },
+    {
+      "repository": "ishowshu/qx",
+      "ref": "main",
+      "expectedCommit": "035dcb864ab589e39b98ed7d3c53667592a94332",
+      "currentCommit": "bc8fd6fa9d7ddd6ff38bd7eefaf264a8e6d53dd7",
+      "changed": true
+    },
+    {
+      "repository": "zmqcherish/proxy-script",
+      "ref": "main",
+      "expectedCommit": "1d9f51bc9a0077d81998bb503ee6158ca83faa73",
+      "currentCommit": "1d9f51bc9a0077d81998bb503ee6158ca83faa73",
+      "changed": false
+    }
+  ]
+}
